@@ -1,0 +1,9 @@
+#lang racket
+
+(require "envEXAMPLE.rkt"
+         test-engine/racket-tests)
+
+;;; Splice together results of functions calls, not literal calls
+(check-expect (empty-env) `(, (hash-copy #hash())))
+
+(test)
